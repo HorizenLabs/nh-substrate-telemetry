@@ -19,6 +19,8 @@ import { Types, Maybe, SortedCollection } from './common';
 import { Column } from './components/List';
 
 export const PINNED_CHAINS = {
+  // NH
+  '0x58829f5437b508fa716528546f9177c5cebec134a425cba82f4692d6f13a3b63': 3,
   // Kusama
   '0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe': 2,
   // Polkadot
