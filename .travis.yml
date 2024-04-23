@@ -1,0 +1,37 @@
+os: linux
+dist: focal
+language: generic
+services:
+  - docker
+
+git:
+  depth: false
+
+env:
+  global:
+    - RELEASE_BRANCH=master
+
+jobs:
+  include:
+    - stage: Image Builder backend
+      name: "Build backend Docker Image"
+      env:
+        - DOCKER_IMAGE_BUILD_NAME=nh-telemetry-backend
+        - DOCKER_WRITER_PASSWORD=$DOCKER_WRITER_PASSWORD_BACKEND
+        - DOCKER_FILE_NAME=Dockerfile_backend
+        - TYPE=backend
+      before_script:
+        - source ci/setup_env.sh
+      script: ci/script.sh
+
+    - stage: Image Builder frontend
+      name: "Build frontend Docker Image"
+      env:
+        - DOCKER_IMAGE_BUILD_NAME=nh-telemetry-frontend
+        - DOCKER_WRITER_PASSWORD=$DOCKER_WRITER_PASSWORD_FRONTEND
+        - DOCKER_FILE_NAME=Dockerfile_frontend
+        - TYPE=frontend
+      before_script:
+        - source ci/setup_env.sh
+      script: ci/script.sh
+
