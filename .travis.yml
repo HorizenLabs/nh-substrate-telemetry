@@ -16,7 +16,7 @@ jobs:
     - stage: Image Builder backend
       name: "Build backend Docker Image"
       env:
-        - DOCKER_IMAGE_BUILD_NAME=telemetry-backend
+        - DOCKER_IMAGE_BUILD_NAME=zkverify-telemetry-backend
         - DOCKER_WRITER_PASSWORD=$DOCKER_WRITER_PASSWORD_BACKEND
         - DOCKER_FILE_NAME=Dockerfile_backend
         - TYPE=backend
@@ -27,7 +27,7 @@ jobs:
     - stage: Image Builder frontend
       name: "Build frontend Docker Image"
       env:
-        - DOCKER_IMAGE_BUILD_NAME=telemetry-frontend
+        - DOCKER_IMAGE_BUILD_NAME=zkverify-telemetry-frontend
         - DOCKER_WRITER_PASSWORD=$DOCKER_WRITER_PASSWORD_FRONTEND
         - DOCKER_FILE_NAME=Dockerfile_frontend
         - TYPE=frontend
