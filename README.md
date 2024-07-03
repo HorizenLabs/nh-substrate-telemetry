@@ -1,7 +1,7 @@
 ![Frontend](https://github.com/paritytech/substrate-telemetry/workflows/Frontend%20CI/badge.svg)
 ![Backend](https://github.com/paritytech/substrate-telemetry/workflows/Backend%20CI/badge.svg)
 
-# Polkadot Telemetry
+# zkVerify Telemetry
 
 ## Overview
 
