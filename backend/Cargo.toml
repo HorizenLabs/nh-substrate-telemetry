@@ -12,7 +12,7 @@ opt-level = 3
 [profile.release]
 lto = true
 panic = "abort"
-version = "1.1.0"
+version = "1.2.0"
 ## Enabling these seems necessary to get
 ## good debug info in Instruments:
 # debug = true
