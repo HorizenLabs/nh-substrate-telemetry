@@ -1,6 +1,6 @@
 {
   "name": "@dotstats/frontend",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Parity Technologies Ltd. <admin@parity.io>",
   "license": "GPL-3.0",
   "description": "zkVerify Telemetry frontend",
