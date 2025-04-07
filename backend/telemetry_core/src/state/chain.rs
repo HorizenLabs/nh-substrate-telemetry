@@ -89,6 +89,7 @@ static FIRST_PARTY_NETWORKS: Lazy<HashSet<BlockHash>> = Lazy::new(|| {
         "0x58829f5437b508fa716528546f9177c5cebec134a425cba82f4692d6f13a3b63", // NH
         "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e", // Westend
         "0xf6e9983c37baf68846fedafe21e56718790e39fb1c582abc408b81bc7b208f9a", // Rococo
+        "0xff7fe5a610f15fe7a0c52f94f86313fb7db7d3786e7f8acf2b66c11d5be7c242", // Volta
     ];
 
     genesis_hash_strs
