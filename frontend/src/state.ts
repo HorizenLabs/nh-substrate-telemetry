@@ -19,6 +19,8 @@ import { Types, Maybe, SortedCollection } from './common';
 import { Column } from './components/List';
 
 export const PINNED_CHAINS = {
+  // Volta
+  '0xff7fe5a610f15fe7a0c52f94f86313fb7db7d3786e7f8acf2b66c11d5be7c242': 4,
   // NH
   '0x58829f5437b508fa716528546f9177c5cebec134a425cba82f4692d6f13a3b63': 3,
   // Kusama
